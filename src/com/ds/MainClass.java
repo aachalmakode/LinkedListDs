@@ -1,19 +1,16 @@
 package com.ds;
-import com.ds.LinkedList;
 import java.util.Scanner;
 
 public class MainClass {
-
+    //main method
     public static void main(String[] args) {
-        LinkedList linkedList = new LinkedList();
+        LinkedList linkedList=new LinkedList();
         linkedList.insert(56);
         linkedList.insert(30);
         linkedList.insert(70);
-        System.out.println("LinkedList:");
+        System.out.println("LinkList:");
         linkedList.print();
-        linkedList.pop();//pop the first element of the list
+        linkedList.popLast();
         linkedList.print();
-
-
     }
 }
