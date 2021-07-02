@@ -1,12 +1,17 @@
 package com.ds;
 import com.ds.LinkedList;
 
-    public class MainClass {
-        public static void main(String[] args) {
-            LinkedList linkList = new LinkedList();
-            linkList.insert(70);
-            linkList.insert(30);
-            linkList.insert(56);
-            linkList.print();
-        }
+import com.ds.LinkedList;
+
+public class MainClass {
+
+    public static void main(String[] args) {
+        System.out.println("Welcome to program");
+        LinkedList linkedlist = new LinkedList();
+        linkedlist.insert(56);
+        linkedlist.insert(30);
+        linkedlist.insert(70);
+
+        linkedlist.print();
     }
+}
