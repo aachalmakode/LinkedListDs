@@ -1,6 +1,9 @@
 package com.ds;
-public class LinkedList
-{  Node head;
+import java.util.LinkedList;
+
+public class LinkedList {
+    //creating head node
+    public Node head;
 
     class Node{
         Node next;
@@ -45,7 +48,7 @@ public class LinkedList
         head = newNode;
     }
 
-    //uc 4method to insert at particular position
+    //uc 4method to insert at particular position or after position
     public void addAtIndex(int value, int index) {
         if (index == 0) {
             insert(value);
@@ -72,7 +75,7 @@ public class LinkedList
         head = head.next;
     }
 
-    //uc6 method for deleting last element of LinkList
+    //method for deleting last element of LinkList
     public void popLast() {
         Node  currNode = head;
         Node  prevNode = head;
@@ -83,6 +86,26 @@ public class LinkedList
         prevNode.next = null;
     }
 
+    public int search(int value)
+    {
+        if (head == null)
+        {
+            System.out.println("List is Empty");
+            return -1;
+        }
+        int index = 1;
+        Node tempNode = head;
+        while (tempNode != null)
+        {
+            if (tempNode.data == value)
+            {
+                break;
+            }
+            index++;
+            tempNode = tempNode.next;
+        }
+        return index;
+    }
 
     //method to Display LinkList
     public void print()
